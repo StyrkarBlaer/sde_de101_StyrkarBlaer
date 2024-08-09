@@ -1,0 +1,18 @@
+Q: 
+Imagine that you are hired to enable data analytics;
+where would you start? How would you go about gathering requirements?
+Hint: Think backward from what the business may need. 
+
+A:
+I presume that in order to enable data analytics, I would need to collect
+large amounts of data to be analyzed.
+The first step would be to perform a data strategy on how to collect
+and securely store data.
+This data would then need to be extracted, transformed, and loaded.
+through a pipeline into a data warehouse where it could be analyzed,
+This data would also need to be tended to with the monitoring.
+of the pipeline, by means of scheduling, executing, and monitoring.
+A company could also employ ML to improve their pipeline.
+workflow and data.
+Ultimately, this data would then be served to the end user.
+by means of dashboarding and APIs.
