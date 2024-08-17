@@ -1,0 +1,69 @@
+//Facts and Dimensions.
+
+In data engineering, a Fact is a specific, well defined numeric attribute.
+By contrast, context is open ended and verbose
+
+Facts can be divided into logical clumps of context like product, store time, customer.
+The logical clumps are called 'Dimensions' and assume informally that dimensions are independent.
+(You could call these 'tables')
+
+Dimensions should only cosist of a facts that form a 'uniform grain' (the same dimensionality)
+to exist in a single fact table.
+Uniform grain guarantees that all the dimensions are used with all the fact records.
+(for example, don't add daily data to a yearly data table.)
+
+Don't fecth specific rows, fetch a bunch and then apply calculation to them to make them digestible.
+(compute the unit price by dividing the dollar sales by the unit sales)
+Some facts can be awkward to compute in this way, like bank balances and inventory reels.
+(divide the answer by the number of time periods to get the right result.
+This technique is called averaging over time.)
+
+Degenerate dimensions are those attributes that do not fit into any single dimension table and,
+therefore, only exist as a key value in a fact table used for filtering queries
+
+
+//Improving at SQL as a Data Engineer.
+
+Notes coming soon(tm)
+
+
+// CTEs and when to use them
+
+Mostly, the only difference between CTEs and Subqueries is readability,
+with negligable performance costs differences.
+
+using a bunch of CTEs is bad for readability.
+
+If you reuse temp tables, make sure to cost calculate them.
+
+It is good practice to check the query plans for best performance.
+
+
+//Window Functions.
+
+Window functions are useful when you have to
+
+1. Rank rows based on a certain column(s) within each partition in the table.
+2. Label numerical values within each partition into buckets based on percentile.
+3. Identify the first(or second or last) event within a specific partition.
+4. Calculate rolling average/mean.
+
+Window functions are typically used when a calculation is needed to be performed on a
+specific set of rows and keep the result at row level or perform calculations based on a rolling window.
+
+Personally, i am (perheps overly) confident in my knowledge of window functions,
+i don't feel the need to list the specific funtionality of each window function.
+
+Window functions can be very expensive to use (in terms of latency), and should always be tested or reconsidered with
+other methods such as group by 
+
+//What is a Data Warehouse?
+
+
+
+
+//Other Thoughts
+
+The documents and pages i was instruced to read often included the use of tools i've never heard of
+and have no experience with, i'm sure i'll get to know all about it eventually, but getting a primer
+on these tools would have been prefferable.
