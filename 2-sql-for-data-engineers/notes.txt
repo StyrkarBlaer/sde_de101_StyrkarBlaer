@@ -52,9 +52,6 @@ Window functions are useful when you have to
 Window functions are typically used when a calculation is needed to be performed on a
 specific set of rows and keep the result at row level or perform calculations based on a rolling window.
 
-Personally, i am (perheps overly) confident in my knowledge of window functions,
-i don't feel the need to list the specific funtionality of each window function.
-
 Window functions can be very expensive to use (in terms of latency), and should always be tested or reconsidered with
 other methods such as group by 
 
@@ -87,6 +84,7 @@ on these tools would have been prefferable.
 As i got into the actual working part of this assignment i was even more confused,
 the various commands i was asked to execute were given no explanation whatsoever
 i also found myself thinking things like "what is Duckdb and why do i just have it?"
+i'm never tought to use duckdb, but the description for this assignment jsut tells me to use it, this seems strange.
 maybe i'm just silly for not knowing this, or maybe i just missed something somewhere,
 but if i didn't, i feel like this aspect of the learning process could be improved.
 
@@ -97,3 +95,4 @@ I feel like this assignent could have used some better explanation, the more tim
 for pople that are "Starting" data engineering.
 
 Truth be told, i feel like i'm more lost than when i started.
+i guess i'm getting filtered, lol.
