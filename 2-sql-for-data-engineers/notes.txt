@@ -24,7 +24,8 @@ therefore, only exist as a key value in a fact table used for filtering queries
 
 //Improving at SQL as a Data Engineer.
 
-Notes coming soon(tm)
+un-ironically just read this entire document again.
+https://www.startdataengineering.com/post/improve-sql-skills-de/
 
 
 // CTEs and when to use them
@@ -59,8 +60,22 @@ other methods such as group by
 
 //What is a Data Warehouse?
 
+In short, a data warehouse is the combined data of other databases that you would utilize
+to provide information tot he end user.
 
+There are multiple design patterns for data warehouses, a few popular ones are
+1.Dimensional modeling - Kimball
+2.Data vault - Linstedt
+3.Data mart
+4.Flat table
 
+OLTP vs OLAP
+(the table doesn't paste into here cleanly, just look it up)
+https://www.startdataengineering.com/post/what-is-a-data-warehouse/#4-oltp-vs-olap-based-data-warehouses
+
+A row oriented database isn't as memory efficient as a column oriented database because the column database
+would only load the columns it needs but the row oriented database would load the entire table.
+This makes column based databases better for larger databases
 
 //Other Thoughts
 
