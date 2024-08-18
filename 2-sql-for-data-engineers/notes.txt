@@ -82,3 +82,18 @@ This makes column based databases better for larger databases
 The documents and pages i was instruced to read often included the use of tools i've never heard of
 and have no experience with, i'm sure i'll get to know all about it eventually, but getting a primer
 on these tools would have been prefferable.
+
+
+As i got into the actual working part of this assignment i was even more confused,
+the various commands i was asked to execute were given no explanation whatsoever
+i also found myself thinking things like "what is Duckdb and why do i just have it?"
+maybe i'm just silly for not knowing this, or maybe i just missed something somewhere,
+but if i didn't, i feel like this aspect of the learning process could be improved.
+
+Looking at the questions provided that i was asked to answer, i had a really hard time getting into them because
+i just couldn't understand what exactly i was being asked, i've read over many of the "Questions" and i can't seem to determine anything at all
+
+I feel like this assignent could have used some better explanation, the more time i spend with it the more i feel like it's not made
+for pople that are "Starting" data engineering.
+
+Truth be told, i feel like i'm more lost than when i started.
