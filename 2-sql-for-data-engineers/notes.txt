@@ -80,19 +80,42 @@ The documents and pages i was instruced to read often included the use of tools 
 and have no experience with, i'm sure i'll get to know all about it eventually, but getting a primer
 on these tools would have been prefferable.
 
+//Sql code project notes
 
-As i got into the actual working part of this assignment i was even more confused,
-the various commands i was asked to execute were given no explanation whatsoever
-i also found myself thinking things like "what is Duckdb and why do i just have it?"
-i'm never tought to use duckdb, but the description for this assignment jsut tells me to use it, this seems strange.
-maybe i'm just silly for not knowing this, or maybe i just missed something somewhere,
-but if i didn't, i feel like this aspect of the learning process could be improved.
+I had some dofficulty getting into the assigned project for this part, so after briefly consulting with the Joseph Machado,
+i was advised instead to follow a different project, link below.
+https://github.com/josephmachado/adv_data_transformation_in_sql/
 
-Looking at the questions provided that i was asked to answer, i had a really hard time getting into them because
-i just couldn't understand what exactly i was being asked, i've read over many of the "Questions" and i can't seem to determine anything at all
+The project above covered many of the basics of SQL, below are some of the things i didn't know.
 
-I feel like this assignent could have used some better explanation, the more time i spend with it the more i feel like it's not made
-for pople that are "Starting" data engineering.
+//1.Basics
 
-Truth be told, i feel like i'm more lost than when i started.
-i guess i'm getting filtered, lol.
+In a `like` condition, a `_` means any single character, and `%` means zero or more characters
+
+//2.Window functions
+
+Common scenarios when you want to use window functions
+
+1. Calculate running metrics/sliding window over rows in the table (aggregate functions)
+2. Ranking rows based on values in column(s) (ranking functions)
+3. Access other row's values while operating on the current row (value functions)
+4. Any combination of the above
+
+Window functions have four essential parts
+
+1. **Partition**: Defines a set of rows based on specified column(s) value. If no partition is specified, the entire table is considered a partition.
+2. **Order By**: This optional clause specifies how to order the rows within a partition.
+3. **Function**: The function to be applied on the current row. The function results in an additional column in the output.
+4. **Window frame**: Within a partition, a window frame allows you to specify the rows to be considered in the function computation.
+
+Here is a quick definition of the standard VALUE functions: 
+
+1. **NTILE(n)**: Divides the rows in the window frame into n approximately equal groups, and assigns a number to each row indicating which group it belongs to.
+2. **FIRST_VALUE()**: Returns the first value in the window frame.
+3. **LAST_VALUE()**: Returns the last value in the window frame.
+4. **LAG()**: Accesses data from a previous row within the window frame.
+5. **LEAD()**: Accesses data from a subsequent row within the window frame.
+
+//3. CTE
+
+//4. Query Template
